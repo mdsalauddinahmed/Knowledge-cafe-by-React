@@ -1,3 +1,7 @@
 .cart_bg{
     background-color: skyblue;
 }
+.sideBar{
+    position: sticky;
+    top: 0;
+}

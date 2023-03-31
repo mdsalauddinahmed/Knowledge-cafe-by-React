@@ -5,8 +5,9 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const Banner = (props) => {
     // console.log(props.blog)
-    const {Author_name,Blog_title,banner_image,Read_time,Author_image,Publish_Date}=props.blog
+ const {Author_name,Blog_title,banner_image,Read_time,Author_image,Publish_Date}=props.blog
  const handleAddToCart=props.handleAddToCart
+ const handleReadTime =props.handleReadTime
     
     
   return (
@@ -31,7 +32,7 @@ const Banner = (props) => {
             <p className="card-text">
             <small className="text-muted">#beginners #programming</small>
           </p>
-          <a href="">Mark as read</a>
+          <span className="cl" onClick={()=>handleReadTime(props.blog)} >Mark as read</span>
         </div>
       </div>
     </div>

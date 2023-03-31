@@ -6,6 +6,7 @@ const Home = () => {
      
     const [blogs,setBlog]=useState([])
      const [cart,setCart]=useState([])
+     const [readTime,setReadTime]=useState([])
     useEffect(()=>{
         fetch('fakadb.json')
         .then(res=>res.json())
@@ -15,17 +16,22 @@ const Home = () => {
          const newCart = [...cart,items]
          setCart(newCart)
     }
+    const handleReadTime =(items)=>{
+        const newReadTime =[...readTime,items]
+        setReadTime(newReadTime)
+        // console.log(newReadTime)
+    }
     return (
 
        <div className='container d-flex justify-content-between gap-4'>
         <div>
          
          {
-             blogs.map(blog=><Banner handleAddToCart={handleAddToCart}  blog={blog}></Banner>)
+             blogs.map(blog=><Banner handleAddToCart={handleAddToCart} handleReadTime={handleReadTime} blog={blog}></Banner>)
          }
      </div>
-        <div className="side_cart col-md-4 card">
-         <SideCart cart={cart} ></SideCart>
+        <div className="side_cart col-md-4 card sideBar ">
+         <SideCart cart={cart} readTime={readTime} ></SideCart>
         </div>
        </div>
     );
