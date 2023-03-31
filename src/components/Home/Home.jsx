@@ -11,6 +11,7 @@ const Home = () => {
     return (
 
        <div>
+         
             {
                 blogs.map(blog=><Banner blog={blog}></Banner>)
             }

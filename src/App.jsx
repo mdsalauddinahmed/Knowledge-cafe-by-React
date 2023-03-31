@@ -21,7 +21,7 @@ function App() {
          <SideCart></SideCart>
       </div>
      </div>
-    <Home></Home>
+  
    
    </>
   )
