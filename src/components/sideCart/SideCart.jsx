@@ -3,7 +3,7 @@ import React from 'react';
 const SideCart = () => {
     return (
         <div>
-            <h1>hello world</h1>
+             <p className='text-center border m-3 fst-normal py-2 text-info rounded  '>Spent time on read : min</p>
         </div>
     );
 };
