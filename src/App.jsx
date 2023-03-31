@@ -13,7 +13,8 @@ function App() {
   return (
     <> 
     <Header></Header>
-    <div className='container d-flex justify-content-between'>
+     
+    <div className='container d-flex justify-content-between gap-4'>
      <div className="home_container">
         <Home></Home>
       </div>
