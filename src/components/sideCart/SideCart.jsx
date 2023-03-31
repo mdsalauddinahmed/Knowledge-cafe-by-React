@@ -29,7 +29,7 @@ const SideCart = (props) => {
              <div className=''>
              {
                 title.map(blog=>
-                    <li className=' text-center py-2 bg-white list-style-none fw-bold rounded border m-3 my-3s list-unstyled '>{blog}</li>
+                    <li className='  p-2 bg-white list-style-none fw-bold rounded border m-3 my-3s list-unstyled '>{blog}</li>
                 )
               }
              </div>
