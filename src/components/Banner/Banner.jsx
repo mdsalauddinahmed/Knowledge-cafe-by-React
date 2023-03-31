@@ -6,7 +6,9 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 const Banner = (props) => {
     // console.log(props.blog)
     const {Author_name,Blog_title,banner_image,Read_time,Author_image,Publish_Date}=props.blog
-     
+ const handleAddToCart=props.handleAddToCart
+    
+    
   return (
     <div>
       <div className="card mb-3">
@@ -22,7 +24,7 @@ const Banner = (props) => {
             </div>
             <div>
                 <span className="me-2"> {Read_time} min read</span>
-                <span><FontAwesomeIcon icon={faBookmark} /> </span>
+                <span onClick={()=>handleAddToCart(props.blog)}><FontAwesomeIcon icon={faBookmark} /> </span>
               </div>
          </div>
            <h4>{Blog_title}</h4>
