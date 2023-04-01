@@ -15,7 +15,7 @@ const SideCart = (props) => {
 //    const [title,setTitle]=useState([])
      for(const item of cart){
        
-         title.push(item.Blog_title)
+        title.push(item.Blog_title)
        
      }
      for(const read of readTime){
@@ -24,8 +24,8 @@ const SideCart = (props) => {
      }
     return (
         <div className='cart_bg sideBar'>
-             <p className='ps-2 bg-white border m-3 fst-normal py-2 text-info rounded  '>Spent time on read :{ totalReadTime} min</p>
-             <p  className=' border m-3 bg-white ps-2 fst-normal py-2  fw-bold rounded  '>Bookmarked Blogs :{cart.length} </p>
+             <p className='ps-2 bg-white border m-3 fst-normal py-2 text-info rounded  '>Spent time on read : { totalReadTime} min</p>
+             <p  className=' border m-3 bg-white ps-2 fst-normal py-2  fw-bold rounded  '>Bookmarked Blogs : {cart.length} </p>
              <div className=''>
              {
                 title.map(blog=>
