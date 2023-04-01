@@ -2,7 +2,7 @@ import React from "react";
 import "./Questions.css";
 const Question = () => {
   return (
-    <div className="container">
+    <div className="container pb-6">
       <h1 className="text-center border-bottom">Important Four Questions</h1>
       <h3>1.Props vs state?</h3>
       <p>

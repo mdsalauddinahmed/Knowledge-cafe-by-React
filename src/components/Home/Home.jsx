@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Banner from "../Banner/Banner";
 import SideCart from "../sideCart/SideCart";
+import { ToastContainer, toast } from 'react-toastify';
 
 const Home = () => {
   const [blogs, setBlog] = useState([]);
@@ -14,10 +15,14 @@ const Home = () => {
   const handleAddToCart = (items) => {
     const newCart = [...cart, items];
     setCart(newCart);
+    toast("blog bookmarked")
+
   };
   const handleReadTime = (items) => {
     const newReadTime = [...readTime, items];
     setReadTime(newReadTime);
+    toast('read time marked')
+    
     // console.log(newReadTime)
   };
   return (
